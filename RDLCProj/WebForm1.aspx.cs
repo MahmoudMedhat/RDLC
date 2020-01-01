@@ -39,7 +39,7 @@ namespace RDLCProj
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            
+
             ShowReport();
 
         }
@@ -57,7 +57,6 @@ namespace RDLCProj
             ReportViewer1.LocalReport.EnableExternalImages = true;
             string imagePath = new Uri(Server.MapPath("~/images/images.jpg")).AbsoluteUri;
             ReportParameter[] param = new ReportParameter[] {
-               
                 new ReportParameter("IMG",DropDownList1.SelectedValue)
             };
             ReportViewer1.LocalReport.SetParameters(param);
